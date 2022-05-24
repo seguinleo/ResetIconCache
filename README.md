@@ -1,2 +1,10 @@
 # ResetIconCache
-BAT file to reset icon cache on Windows 10/11
+BAT file to reset icon cache on Windows 10/11.
+
+```
+taskkill /im explorer.exe /f
+cd /d %userprofile%\appdata\local
+attrib -h -r -s iconcache.db
+del iconcache.db /q
+start %windir%\explorer.exe
+```
