@@ -1,5 +1,5 @@
 # ResetIconCache
-BAT file to reset icon cache on Windows 7/10/11.
+BAT file to reset icon cache on Windows 7/10/11 to avoid white icons.
 
 ```batch
 taskkill /im explorer.exe /f
